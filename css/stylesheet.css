@@ -45,6 +45,10 @@ table {
 
 /* ############## END OF RESET ############## */
 
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 .header-main-div {
 	display: flex;
 	background-color: #f3e19a;
@@ -80,4 +84,70 @@ table {
 .header-btn:hover, .header-btn:focus {
 	border-color: #39a9db;
 	box-shadow: 0 0 0 0.1825rem #39a9db;
+}
+
+.card-board-div {
+	display: flex;
+
+	justify-content: center;
+	flex-wrap: wrap;
+	
+
+	margin-top: 0.5rem;
+}
+
+.card-div {
+	position: relative;
+	display: inline-block;
+	padding: 0.75rem;
+	margin: 0.5rem;
+
+	border: solid 0.125rem #00000033;
+	border-radius: 0.5rem;
+
+	max-width: 17.5rem;
+}
+
+.card-content {
+	display: block;
+	font-size: 1.2rem;
+	margin-bottom: 2.5rem;
+}
+
+.card-content > * {
+	max-width: 65%;
+}
+
+.card-content > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-likes-div {
+	position: absolute;
+	bottom: 0.5rem;
+	right: 0.75rem;
+}
+
+.card-like-btn {
+	outline: none;
+	border: none;
+	padding: 0.25rem;
+
+	font-size: 1rem;
+
+	background-color: #ffffff;
+
+	cursor: pointer;
+
+	transition: all 0.2s;
+}
+
+.card-like-btn:hover, .card-like-btn:focus {
+	color: #ff3c38;
+}
+
+.card-likes {
+	font-size: 1rem;
 }
