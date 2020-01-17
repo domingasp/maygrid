@@ -44,3 +44,40 @@ table {
 }
 
 /* ############## END OF RESET ############## */
+
+.header-main-div {
+	display: flex;
+	background-color: #f3e19a;
+
+	padding: 0.75rem;
+}
+
+.header-logo {
+	max-width: 3rem;
+}
+
+.header-btn {
+	border: none;
+	outline: none;
+	padding: 0;
+
+	background-color: #ffffff;
+
+	border: solid 0.0625rem #b4a66f;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.0625rem 0.125rem 0 #00000077;
+
+	font-size: 1rem;
+
+	box-sizing: border-box;
+	padding: 0 0.8rem;
+	margin-left: auto;
+
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.header-btn:hover, .header-btn:focus {
+	border-color: #39a9db;
+	box-shadow: 0 0 0 0.1825rem #39a9db;
+}
