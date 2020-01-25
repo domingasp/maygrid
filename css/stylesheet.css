@@ -114,6 +114,10 @@ body {
 	overflow: scroll;
 }
 
+.card-div-a {
+	outline: none;
+}
+
 .card-div {
 	display: inline-block;
 
@@ -123,6 +127,12 @@ body {
 	max-width: 0.625rem;
 	min-height: 0.625rem;
 	max-height: 0.625rem;
+}
+
+.card-div:hover, .card-div-a:focus > .card-div {
+	position: relative;
+	box-shadow: 0 0 0 0.125rem #39a9db;
+	z-index: 1;
 }
 
 .color-form {
@@ -154,7 +164,6 @@ body {
 	border: none;
 
 	cursor: pointer;
-
 }
 
 #post_color_wrapper {
