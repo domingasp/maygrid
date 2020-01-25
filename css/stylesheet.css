@@ -57,21 +57,30 @@ body {
 }
 
 .header-logo {
-	max-width: 3rem;
+	display: block;
+	height: 2.6rem;
 }
 
-.header-btn {
+.header-span {
+	font-size: 1.2rem;
+	margin-top: 0.6rem;
+	margin-left: auto;
+}
+
+.header-a {
 	border: none;
 	outline: none;
 	padding: 0;
 
 	background-color: #ffffff;
+	color: #000000;
 
 	border: solid 0.0625rem #b4a66f;
 	border-radius: 0.5rem;
 	box-shadow: 0 0.0625rem 0.125rem 0 #00000077;
 
 	font-size: 1rem;
+	text-align: center;
 
 	box-sizing: border-box;
 	padding: 0 0.8rem;
@@ -81,73 +90,106 @@ body {
 	transition: all 0.2s;
 }
 
-.header-btn:hover, .header-btn:focus {
+.header-a:hover, .header-a:focus, .color-submit-btn:hover, .color-submit-btn:focus, #post_color_wrapper:hover {
 	border-color: #39a9db;
 	box-shadow: 0 0 0 0.1825rem #39a9db;
 }
 
+.header-a > i {
+	margin-top: 0.725rem;
+}
+
 .card-board-div {
-	display: flex;
-
-	justify-content: center;
-	flex-wrap: wrap;
+	display: block;
+	box-shadow: 0 0 0.125rem 0 #b4a66f;
 	
+	margin: 0 auto;
+	font-size: 0;
 
-	margin-top: 0.5rem;
+	min-width: 62.5rem;
+	max-width: 62.5rem;
+	min-height: 62.5rem;
+	max-height: 62.5rem;
+
+	overflow: scroll;
 }
 
 .card-div {
-	position: relative;
 	display: inline-block;
-	padding: 0.75rem;
-	margin: 0.5rem;
 
-	border: solid 0.125rem #00000033;
-	border-radius: 0.5rem;
+	box-sizing: border-box;
 
-	max-width: 17.5rem;
+	min-width: 0.625rem;
+	max-width: 0.625rem;
+	min-height: 0.625rem;
+	max-height: 0.625rem;
 }
 
-.card-content {
+.color-form {
 	display: block;
-	font-size: 1.2rem;
-	margin-bottom: 2.5rem;
-}
-
-.card-content > * {
-	max-width: 65%;
-}
-
-.card-content > img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.card-likes-div {
-	position: absolute;
-	bottom: 0.5rem;
-	right: 0.75rem;
-}
-
-.card-like-btn {
-	outline: none;
-	border: none;
-	padding: 0.25rem;
-
-	font-size: 1rem;
 
 	background-color: #ffffff;
 
+	width: 95%;
+	max-width: 15rem;
+
+	margin: 1rem auto;
+
+	box-sizing: border-box;
+	padding: 1rem;
+
+	border: solid 0.125rem #cccccc;
+	border-radius: 0.25rem;
+}
+
+.color-label {
+	display: inline-block;
+}
+
+.color-input {
+	opacity: 0;
+	display: block;
+	width: 3rem;
+	height: 1rem;
+	border: none;
+
 	cursor: pointer;
+
+}
+
+#post_color_wrapper {
+	float: right;
+	margin-top: -0.0625rem;
+
+	border-radius: 0.25rem;
+	border: solid black 0.0625rem;
 
 	transition: all 0.2s;
 }
 
-.card-like-btn:hover, .card-like-btn:focus {
-	color: #ff3c38;
-}
+.color-submit-btn {
+	outline: none;
+	border: none;
+	padding: 0;
 
-.card-likes {
-	font-size: 1rem;
+	display: block;
+	margin: 0 auto;
+	margin-top: 1rem;
+
+	width: 100%;
+
+	background-color: #ffffff;
+	color: #000000;
+
+	border: solid 0.0625rem #b4a66f;
+	border-radius: 0.125rem;
+	box-shadow: 0 0.0625rem 0.125rem 0 #00000077;
+
+	font-size: 0.8rem;
+
+	box-sizing: border-box;
+	padding: 0.5rem 0;
+
+	cursor: pointer;
+	transition: all 0.2s;
 }
